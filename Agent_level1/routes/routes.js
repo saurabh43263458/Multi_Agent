@@ -1,5 +1,5 @@
 import express from "express"
-import {geminiController,agentGeminiController, EmailAgentController} from "../controller/controller.js";
+import {geminiController,agentGeminiController, EmailAgentController, agentG} from "../controller/controller.js";
 
 export let route = express.Router();
 
@@ -25,3 +25,9 @@ route.post("/agent",agentGeminiController)
 
 route.post("/agentEmail",EmailAgentController)
 
+/**
+ * @route :/agentwithLangGraph
+ * @description building agent using langgraph
+ */
+
+route.post("/agentgraph",agentG)

@@ -1,5 +1,3 @@
-
-
 import { tool } from "langchain";
 import {z}from "zod"
 import { sendmailer } from "../service/NodeMailerService.js";
